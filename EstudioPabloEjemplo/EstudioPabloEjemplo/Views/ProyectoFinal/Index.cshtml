@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Proyecto Final</h2>
+
+<div class="row">
+    <div class="form-group">
+        <input type="button" id="btnBuscar" class="btn btn-primary" value="Buscar" />
+        <input type="button" id="btnNuevo" class="btn btn-success" value="Nuevo" />
+    </div>
+</div>
+
+
+
+<table id="tblvisualDeDatos">
+</table>
+
+
+
+<div id="myModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Departamento</label>
+                            <select id="ddlDepartamentos" class="form-control">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Municipio</label>
+                            <select id="ddlMunicipio" class="form-control">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Persona</label>
+                            <select id="ddlPersona" class="form-control">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Medicamentos</label>
+                            <select id="ddlMedicamentos" class="form-control">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Fecha Radicado</label>
+                            <input id="txtFechaRadicado" type="datetime-local" class="form-control" />
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        @*<div class="form-group">
+                <label>Estado de Registro</label>
+                <input type="text" id="txtEstadoRegistro" class="form-control" />
+            </div>*@
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnGuardar">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="~/Scripts/Personas/ProyectoFinal.js"></script>
